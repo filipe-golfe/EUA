@@ -6,6 +6,24 @@
 
 ---
 
+# Autenticação
+
+Endpoint -> https://api.clippfacil.com.br/rpc/v2/application.authenticate
+
+Esse endpoint é responsável por logar na conta e trazer o access_token, o qual é usado como "Header" nas requisições HTTP do sistema, conforme explicado acima.
+
+JSON de exemplo:
+```
+{
+	"login": "account_email_example@gmail.com",
+	"password": "securePasswordExample"
+}
+```
+
+Nesse endpoint, deve-se enviar o header "origin" com o valor "https://zetaweb.com.br"
+
+---
+
 # Cadastro de Produtos
 
 Endpoint -> https://api.clippfacil.com.br/rpc/v1/inventory.post-product
@@ -160,8 +178,10 @@ Informar o id do CSOSN conforme tabela abaixo:
 ![image](https://github.com/filipe-golfe/EUA/assets/69996639/b7c56576-f74b-465e-8ff1-34c70f602da2)
 
 ### NCM
-Informar o ID do NCM conforme tabela abaixo:
+Informar o ID do NCM conforme tabela:
 [fiscalncm_202402201112.csv](https://github.com/filipe-golfe/EUA/files/14345583/fiscalncm_202402201112.csv)
+
+- O Restante dos campos manter igual o JSON de exemplo
 
 ---
 
