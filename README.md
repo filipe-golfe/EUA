@@ -1,8 +1,8 @@
 - Documentação para empresas Optantes do Simples Nacional, nessa documentação, destaca-se apenas impostos e valores obrigatórios para emissão de NFCe, caso for necessário emitir NFe, pode ser necessário informar mais impostos.
 
-- Em todos os endpoints citados, deve-se usar o método POST.
+- Em todos os endpoints, deve-se usar o método POST.
 
-- Em todos os endpoints, deve-se informar o header Authorization-Compufacil com o token de autorização da conta (resetado diariamente)
+- Em todos os endpoints (exceto o de autorização), deve-se informar o header Authorization-Compufacil com o token de autorização da conta (resetado diariamente)
 
 ---
 
@@ -236,5 +236,3 @@ JSON de exemplo:
 	"id": "7606643"
 }
 ```
-
----
