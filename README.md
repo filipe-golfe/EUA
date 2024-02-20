@@ -1,4 +1,4 @@
-- Documentação para empresas Optantes do Simples Nacional.
+- Documentação para empresas Optantes do Simples Nacional, nessa documentação, destaca-se apenas impostos e valores obrigatórios para emissão de NFCe, caso for necessário emitir NFe, pode ser necessário informar mais impostos.
 
 - Em todos os endpoints citados, deve-se usar o método POST.
 
