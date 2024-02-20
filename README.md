@@ -8,7 +8,7 @@
 
 # Autenticação
 
-Endpoint -> https://api.clippfacil.com.br/rpc/v2/application.authenticate
+Endpoint -> http://app.clippfacil.local/rpc/v1/application.authenticate
 
 Esse endpoint é responsável por logar na conta e trazer o access_token, o qual é usado como "Header" nas requisições HTTP do sistema, conforme explicado acima.
 
@@ -19,8 +19,6 @@ JSON de exemplo:
 	"password": "securePasswordExample"
 }
 ```
-
-Nesse endpoint, deve-se enviar o header "origin" com o valor "https://zetaweb.com.br"
 
 ---
 
