@@ -130,6 +130,7 @@ Para cadastrar grupos no sistema, acessar a URL no browser: {{base_web_url}}/reg
 
 ### PIS/COFINS
 (float)
+
 Valores devem ser de 0 à 1 (sendo 1 = 100%).
 
 ### CSTPIS/CSTCOFINS
