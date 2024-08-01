@@ -103,6 +103,10 @@ JSON de exemplo:
 
 ## Discriminação dos campos a serem alterados
 
+Citei apenas os principais campos, caso for necessário informar outros dados específicos, favor nos informar.
+
+Deve-se alterar apenas os campos informados abaixo, o restante pode manter igual o JSON de exemplo.
+
 ### description/reference/observation
 (string)
 
@@ -111,6 +115,20 @@ JSON de exemplo:
 
 ### price/cost/averageCost/quantity
 (float)
+
+### unitOfMeasure
+(object)
+
+Informar o ID da unidade de medida. Para buscar a listagem de unidades de medida, deve-se chamar o endpoint {{base_api_url}}/rpc/v2/inventory.get-unit-of-measure-paginate enviando o JSON de exemplo abaixo:
+
+```
+{
+	"page": 1,
+	"maxResults": 30
+}
+```
+
+Para cadastrar unidades de medida no sistema, acessar a URL no browser: {{base_web_url}}/register/stock/unit-of-measure
 
 ### group
 (integer)
@@ -127,6 +145,8 @@ Informar o ID do grupo cadastrado na conta. Para buscar a listagem de grupos, de
 Caso não desejar informar um grupo, remover o parâmetro do payload.
 
 Para cadastrar grupos no sistema, acessar a URL no browser: {{base_web_url}}/register/stock/group
+
+## Campos fiscais (para cálculo de impostos, consultar contabilidade para saber o que é cada parâmetro e o que informar)
 
 ### PIS/COFINS
 (float)
@@ -172,8 +192,6 @@ Informar o ID do CST conforme tabela abaixo:
 
 Informar o ID do NCM conforme tabela:
 [fiscalncm_202402201112.csv](https://github.com/filipe-golfe/EUA/files/14345583/fiscalncm_202402201112.csv)
-
-- O Restante dos campos pode manter igual o JSON de exemplo
 
 ---
 
