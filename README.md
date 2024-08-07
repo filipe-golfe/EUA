@@ -271,7 +271,7 @@ Informar o ID do CSTCOFINS conforme print abaixo:
 
 # Atualização de produtos
 
-Endpoint -> {{base_api_url}}/rpc/v2/Integrations.patch-product
+Endpoint -> {{base_api_url}}/rpc/v2/Integrations.imagine-exhibitions-patch-product
 
 É possível atualizar até 50 produtos por request.
 
